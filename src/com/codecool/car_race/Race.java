@@ -17,8 +17,11 @@ public class Race {
         }
     }
 
-    public void printResults() {
-        vehicles.forEach(System.out::println);
+    private void printResults() {
+//        vehicles.forEach(System.out::println);
+        for (Vehicle vehicle : vehicles) {
+            System.out.println(vehicle.getName());
+        }
     }
 
     public static void main(String[] args) {

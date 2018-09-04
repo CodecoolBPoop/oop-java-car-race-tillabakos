@@ -4,7 +4,14 @@ public abstract class Vehicle {
   private String name;
  //TODO add fields
 
-  protected Vehicle(String name) {
+  protected Vehicle() {
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
     this.name = name;
   }
 }
